@@ -1,0 +1,42 @@
+{
+  "fit_split": "Normal Train only",
+  "fit_datasets": [
+    "Train01",
+    "Train02",
+    "Train03",
+    "Train04",
+    "Train05",
+    "Train06",
+    "Train07",
+    "Train08"
+  ],
+  "fit_sample_count": 123,
+  "ddof": 0,
+  "per_sample_normalization": false,
+  "feature": "raw six-axis IMU in original CSV order",
+  "observation_count": 88560,
+  "axis_names": [
+    "ax",
+    "ay",
+    "az",
+    "gx",
+    "gy",
+    "gz"
+  ],
+  "mean": [
+    -9.703253763521051,
+    0.542835674760148,
+    0.06994034668656576,
+    -0.025529008570725355,
+    0.3306050287675728,
+    -0.047029152364481
+  ],
+  "std": [
+    0.02011595199349412,
+    0.15529160876751433,
+    0.07028680843422933,
+    0.5342965948695829,
+    1.0597990125784915,
+    0.3909950601214168
+  ]
+}

@@ -1,0 +1,5 @@
+group,sample_count,expected_normal,expected_anomaly,correct_decisions,score_min,score_median,score_max
+normal_test,13,13,0,13,2.874401000,4.397734000,5.780482000
+slight_anomaly,6,0,6,6,7.608168600,8.887212500,12.108359000
+fierce_anomaly,6,0,6,6,8.331096000,14.546771000,17.915003000
+total,25,13,12,25,,,

@@ -1,0 +1,42 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Reproducible local outputs
+training/cache/
+training/outputs/
+converter/output/
+analysis/output/
+*.log
+
+# ModusToolbox generated dependencies and builds
+mtb_shared/
+firmware/mtb_shared/
+firmware/build/
+firmware/.mtbLaunchConfigs/
+firmware/GeneratedSource/
+firmware/.ninja_*
+firmware/.mtbqueryapi
+firmware/.clangd
+
+# Editor and operating-system state
+.idea/
+.vscode/
+.settings/
+*.code-workspace
+*.user
+*.suo
+Thumbs.db
+.DS_Store
+
+# Generated BSP documentation
+firmware/bsps/**/docs/
+
+# Generated ModusToolbox metadata
+firmware/bsps/**/config/GeneratedSource/*.timestamp
+firmware/bsps/**/config/GeneratedSource/.hardware-config-server.generated-files

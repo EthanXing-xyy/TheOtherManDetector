@@ -1,0 +1,7 @@
+Time(Seconds),Length(Seconds),Label(string),Confidence(double),Comment(string)
+2.368,9.92,AbnormalFierce,1,
+21.954375,11.133625000000002,AbnormalFierce,1,
+36.864,10.816000000000003,AbnormalFierce,1,
+50.688,9.727999999999994,AbnormalFierce,1,
+66.304,10.495999999999995,AbnormalFierce,1,
+85.504,10.751999999999995,AbnormalFierce,1,

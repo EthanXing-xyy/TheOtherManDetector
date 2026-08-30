@@ -1,0 +1,7 @@
+Time(Seconds),Length(Seconds),Label(string),Confidence(double),Comment(string)
+4.032,18.1196875,AbnormalSlight,1,
+36.6079999,13.6960001,AbnormalSlight,1,
+58.176,14.271999899999997,AbnormalSlight,1,
+80.4479999,13.960875099999996,AbnormalSlight,1,
+100.672,14.961875000000006,AbnormalSlight,1,
+120.704,15.296000000000006,AbnormalSlight,1,

@@ -1,0 +1,8 @@
+# Local IDE state and generated build material
+.mtbLaunchConfigs
+.settings
+.vscode
+build
+
+# Host-only utilities are not target firmware sources.
+tools

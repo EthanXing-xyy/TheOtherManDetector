@@ -1,0 +1,85 @@
+experiment:
+  seeds: [42, 123, 2026]
+  device: cpu
+
+paths:
+  data_root: ../dataset/processed
+  metadata: ../dataset/processed/metadata/cleaning_metadata.csv
+  cache_dir: cache
+  output_dir: outputs
+
+data:
+  accepted_status: OK
+  splits:
+    train: [normal_train]
+    validation: [normal_validation]
+    normal_test: [normal_test]
+    slight_anomaly: [slight_anomaly]
+    fierce_anomaly: [fierce_anomaly]
+  expected_counts:
+    train: 123
+    validation: 16
+    normal_test: 13
+    slight_anomaly: 6
+    fierce_anomaly: 6
+    total_accepted: 164
+    rejected: 3
+
+time_grid:
+  duration_seconds: 7.2
+  block_seconds: 0.04
+  frames: 180
+  first_center_seconds: -2.48
+  onset_frame: 62
+
+audio:
+  sample_rate: 16000
+  samples: 115200
+  samples_per_block: 640
+  window: hann
+  hann_periodic: true
+  n_fft: 1024
+  power_bins: 513
+  n_mels: 40
+  f_min: 0.0
+  f_max: 7000.0
+  mel_scale: slaney
+  mel_norm: slaney
+  eps: 1.0e-6
+  pcm_scaling: signed_integer_full_scale
+  fft_normalization: none
+  logarithm: natural
+
+imu:
+  sample_rate: 100
+  samples: 720
+  axes: [ax, ay, az, gx, gy, gz]
+  samples_per_block: 4
+
+model:
+  audio_channels: [32, 32]
+  imu_channels: [12, 16]
+  feature_count: 48
+  time_gat_node_dim: 48
+  gat_negative_slope: 0.2
+  gru_input_size: 144
+  gru_hidden_size: 64
+  bottleneck_channels: [48, 32]
+  decoder_channels: [48, 64, 64]
+  target_dim: 64
+  upsample_mode: nearest
+
+training:
+  optimizer: AdamW
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-4
+  batch_size: 8
+  max_epochs: 200
+  early_stopping_patience: 25
+  scheduler: ReduceLROnPlateau
+  scheduler_factor: 0.5
+  scheduler_patience: 8
+  scheduler_min_lr: 1.0e-6
+  gradient_clip_norm: 1.0
+  num_workers: 0
+  cpu_threads: 0
