@@ -1,35 +1,6 @@
+**English** | [中文](README_zh.md)
+
 # TheOtherManDetector | 隔壁老王检测器
-
-### 中文版
-
-> **你还在担心老婆出轨吗？**  
-> **你还在担心长期出差在外，被隔壁老王偷家吗？**
-
-为了保障异地夫妻的婚姻幸福生活，我们特此研发了 **TheOtherManDetector（隔壁老王检测器）**。
-
-设想这样一个经典而令人不安的场景：
-
-当你结束漫长的出差，终于回到家门口并敲响房门的那一刻，屋里的隔壁老王意识到大事不妙。正门显然已经不能走了，于是，他唯一合理的逃生方案就是：
-
-**迅速拉开移门，从窗口跑路。**
-
-问题来了。
-
-正常人开门，和一个正在逃命的人开门，真的一样吗？
-
-脚步的节奏、门体的振动、拉门的速度，以及整个过程中产生的声音，都可能暴露一些不太正常的行为模式。
-
-于是，**TheOtherManDetector** 应运而生。
-
-本项目利用同步采集的 **Audio + IMU 多模态信号**学习正常的移门交互模式。当系统检测到异常的脚步、异常的拉门动作或异常的声学与振动模式时，即可立即给出异常警报。
-
-从技术角度来说，它实际上是一个运行于 **PSoC 6 MCU** 上的多模态 Edge AI 异常检测系统。
-
-至于它究竟是在检测异常行为，还是在守护婚姻……
-
-这取决于你怎么使用它。
-
-### English Version
 
 > **Still worried about your wife cheating on you?**  
 > **Still worried that while you're away on a long business trip, *the other man* might be visiting your home?**
