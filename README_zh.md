@@ -244,6 +244,7 @@ python analysis/audio_frequency_analysis.py
 ## 作者
 
 **Ethan_Xing**  
+联系：`xyy051036@gmail.com`
 
 ## 许可
 

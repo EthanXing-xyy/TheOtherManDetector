@@ -302,6 +302,7 @@ domain shift can reduce separation. See
 ## Author
 
 **Ethan_Xing**  
+Contact: `xyy051036@gmail.com`
 
 ## License
 
